@@ -20,3 +20,21 @@ to avoid compatibility issue.
 ### GWAS
 
 ### Genome Browser
+
+## Installation
+### Window
+1. Download ivag.v1.tar file.
+2. Open CMD and change directory where ivag.v1.tar file is downloaded.
+3. Type following on CMD: ``` docker load -i ivag.v1.tar ```
+4. Type following on CMD:
+   ```
+   docker run -ti -v YOUR_LOCAL_DIRECTORY_TO_MOUNT:/jbrowse/my_data -p 8080:80 -p 8383:3838 leetaerim/ivag:v1 /bin/bash -c "Rscript load.R"
+   ```
+   - Make sure that your local directory to mount consists of a subdirectory called raw, json and plink
+   - When you want to share this web-interface with your team, add ``` -e HOST_IP='YOUR_IP_ADDRESS' ``` to docker run command
+5. Start the app by typing fowiing URL into your internet browser.
+    - IVAG - RNAseq, GWAS, JBrowse : localhost:8383
+    - IVAG - JBrowse : localhost:8080
+    
+    The construction of the genome browser should be done at localhost:8383
+    when you typing this URL, you can type localhost IP instead of localhost.
