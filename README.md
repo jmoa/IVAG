@@ -9,6 +9,7 @@ IVAG is developed in R using shiny package and is dockerized with all required d
 to avoid compatibility issue.
 
 ## Functions
+
 ### RNA-Seq
 - Differentially expressed Gene analysis
 - Visualization
@@ -18,8 +19,17 @@ to avoid compatibility issue.
 - Gene Ontology Enrichment analysis
 
 ### GWAS
-
+- LD analysis
+- Gene ID annotation
+- Visualization
+  - Manhattan plot
+  - QQ plot
+  - LD heatmap
+  
 ### Genome Browser
+- Genome Browser build
+- Various track creation
+- Interactive visualization of RNA-Seq and GWAS data
 
 ## Installation
 ### Window
