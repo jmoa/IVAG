@@ -48,3 +48,5 @@ to avoid compatibility issue.
     
     The construction of the genome browser should be done at localhost:8383
     when you typing this URL, you can type localhost IP instead of localhost.
+
+## Detailed manual can be downloaded in PDF format.
