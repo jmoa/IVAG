@@ -33,14 +33,14 @@ to avoid compatibility issue.
 
 ## Installation
 1. Download and install docker.
-2. Open CMD and type ```docker pull leetaerim/ivag:v1```
-3. Type following on CMD:
+2. Open CMD(Terminal if linux) and type ```docker pull leetaerim/ivag:v1```
+3. Type following on CMD(Terminal if linux):
    ```
    docker run -ti -v YOUR_LOCAL_DIRECTORY_TO_MOUNT:/jbrowse/my_data -p 8080:80 -p 8383:3838 leetaerim/ivag:v1 /bin/bash -c "Rscript load.R"
    ```
    - Make sure that your local directory to mount consists of a subdirectory called raw, json and plink
    - When you want to share this web-interface with your team, add ``` -e HOST_IP='YOUR_IP_ADDRESS' ``` to docker run command
-4. Start the app by typing fowiing URL into your internet browser.
+4. Start the app by typing following URL into your internet browser.
     - IVAG - RNAseq, GWAS, JBrowse : localhost:8383
     - IVAG - JBrowse : localhost:8080
     
